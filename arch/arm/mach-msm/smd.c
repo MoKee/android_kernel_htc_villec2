@@ -2133,7 +2133,7 @@ static irqreturn_t smsm_irq_handler(int irq, void *data)
 			 * As a result, this condition must at the first.
 			 */
 			pr_err("[SMD] SMSM: Modem SMSM state changed to SMSM_CACHE_FLUSH_DONE.\n");
-			notify_modem_cache_flush_done();
+
 #endif
 		} else if (modm & SMSM_RESET) {	/* Modified by HTC */
 			if (!cpu_is_msm8960() && !cpu_is_msm8930()) {
